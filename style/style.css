@@ -1,0 +1,16 @@
+@import url(/normalize.css);
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh; }
+
+div {
+  border: 1px solid darkcyan; }
+
+.flex-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around; }
+
+/*# sourceMappingURL=style.css.map */
