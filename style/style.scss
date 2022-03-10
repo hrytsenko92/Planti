@@ -1,12 +1,28 @@
-@import url(/normalize.css);
+  @font-face {
+    font-family: 'Barriecito';
+    src: url(/font/Barriecito-Regular.woff) format('woff');
+    font-weight: 'regular';
+  }
+  @font-face {
+    font-family: 'Migrena Grotesque Light';
+    src: url(/font/Migrena_Grotesque-Light.woff) format('woff');
+    font-weight: 'light';
+  }
+  @font-face {
+    font-family: 'Migrena Grotesque Regular';
+    src: url(/font/Migrena_Grotesque-Regular.woff) format('woff');
+    font-weight: 'regular';
+  }
 
 
+html {
+    font-size: 16px;
+}
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     max-width: 1440px;
-    margin: 0 auto;
 };
 
 
@@ -21,9 +37,11 @@ div {
     height: 100vh;
     .flex-item-offer1 {
         text-align: center;
+        height: 2.4rem;
     }
     .flex-item-offer2 {
         text-align: center;
+        height: 2.4rem;
     }
 }
 
@@ -31,8 +49,15 @@ div {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    height: 5rem;
+    font-family: 'Migrena Grotesque Light';
     .header-logo {
         margin-left: 3rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+        font-family: 'Barriecito';
     }
     .header-menu-ul {
         flex-grow: 0.2;
@@ -40,20 +65,44 @@ div {
         flex-flow: row nowrap;
         justify-content: space-around;
         align-items: center;
+        .ul-item {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+            }
+        }
     }
     .header-login {
         margin-right: 3rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            text-decoration: none;
+        }
     }
 }
 
 .flex-item-main {
+    flex-grow: 1;
     display: flex;
     flex-flow: row nowrap;
+    
     .main-left {
-
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
     }
     .main-right {
-        background-image: url(/img/Green.webp);
+        width: 50%;
+        .img-div {
+            background: url(/unsplash-2.jpg) center no-repeat;
+            background-size: cover;
+            background-color: royalblue;
+            min-height: 100%;
+        }
     }
 }
 
@@ -61,4 +110,5 @@ div {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    height: 4.6rem;
 }

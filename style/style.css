@@ -1,10 +1,23 @@
-@import url(/normalize.css);
+@font-face {
+  font-family: 'Barriecito';
+  src: url(/font/Barriecito-Regular.woff) format("woff");
+  font-weight: 'regular'; }
+@font-face {
+  font-family: 'Migrena Grotesque Light';
+  src: url(/font/Migrena_Grotesque-Light.woff) format("woff");
+  font-weight: 'light'; }
+@font-face {
+  font-family: 'Migrena Grotesque Regular';
+  src: url(/font/Migrena_Grotesque-Regular.woff) format("woff");
+  font-weight: 'regular'; }
+html {
+  font-size: 16px; }
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1440px;
-  margin: 0 auto; }
+  max-width: 1440px; }
 
 div {
   border: 1px solid darkcyan; }
@@ -15,34 +28,65 @@ div {
   justify-content: space-between;
   height: 100vh; }
   .flex-container .flex-item-offer1 {
-    text-align: center; }
+    text-align: center;
+    height: 2.4rem; }
   .flex-container .flex-item-offer2 {
-    text-align: center; }
+    text-align: center;
+    height: 2.4rem; }
 
 .flex-item-header {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  height: 5rem;
+  font-family: 'Migrena Grotesque Light'; }
   .flex-item-header .header-logo {
-    margin-left: 3rem; }
+    margin-left: 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Barriecito'; }
   .flex-item-header .header-menu-ul {
     flex-grow: 0.2;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center; }
+    .flex-item-header .header-menu-ul .ul-item {
+      list-style-type: none; }
+      .flex-item-header .header-menu-ul .ul-item a {
+        text-decoration: none; }
   .flex-item-header .header-login {
-    margin-right: 3rem; }
+    margin-right: 3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center; }
+    .flex-item-header .header-login a {
+      text-decoration: none; }
 
 .flex-item-main {
+  flex-grow: 1;
   display: flex;
   flex-flow: row nowrap; }
+  .flex-item-main .main-left {
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around; }
   .flex-item-main .main-right {
-    background-image: url(/img/Green.webp); }
+    width: 50%; }
+    .flex-item-main .main-right .img-div {
+      background: url(/unsplash-2.jpg) center no-repeat;
+      background-size: cover;
+      background-color: royalblue;
+      min-height: 100%; }
 
 .flex-item-footer {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  height: 4.6rem; }
 
 /*# sourceMappingURL=style.css.map */
