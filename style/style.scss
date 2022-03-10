@@ -5,7 +5,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
 };
 
 
@@ -16,5 +17,48 @@ div {
 .flex-container {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 100vh;
+    .flex-item-offer1 {
+        text-align: center;
+    }
+    .flex-item-offer2 {
+        text-align: center;
+    }
+}
+
+.flex-item-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    .header-logo {
+        margin-left: 3rem;
+    }
+    .header-menu-ul {
+        flex-grow: 0.2;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header-login {
+        margin-right: 3rem;
+    }
+}
+
+.flex-item-main {
+    display: flex;
+    flex-flow: row nowrap;
+    .main-left {
+
+    }
+    .main-right {
+        background-image: url(/img/Green.webp);
+    }
+}
+
+.flex-item-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }

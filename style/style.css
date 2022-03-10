@@ -3,7 +3,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100vh; }
+  max-width: 1440px;
+  margin: 0 auto; }
 
 div {
   border: 1px solid darkcyan; }
@@ -11,6 +12,37 @@ div {
 .flex-container {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around; }
+  justify-content: space-between;
+  height: 100vh; }
+  .flex-container .flex-item-offer1 {
+    text-align: center; }
+  .flex-container .flex-item-offer2 {
+    text-align: center; }
+
+.flex-item-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
+  .flex-item-header .header-logo {
+    margin-left: 3rem; }
+  .flex-item-header .header-menu-ul {
+    flex-grow: 0.2;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center; }
+  .flex-item-header .header-login {
+    margin-right: 3rem; }
+
+.flex-item-main {
+  display: flex;
+  flex-flow: row nowrap; }
+  .flex-item-main .main-right {
+    background-image: url(/img/Green.webp); }
+
+.flex-item-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
 
 /*# sourceMappingURL=style.css.map */
