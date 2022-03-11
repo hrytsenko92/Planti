@@ -32,11 +32,12 @@ body {
         border-bottom: 1px solid black;
         transition: transform 5ms linear;
     };
+    background-color: #BEDACC;
 };
 
 
-div {
-    border: 1px solid darkcyan;}
+//div {
+   // border: 1px solid darkcyan;}
 
 
 .flex-container {
@@ -53,6 +54,7 @@ div {
         font-family: 'Migrena Grotesque Light';
         font-size: 1rem;
         font-weight: 300;
+        background-color: #CBF3FF;
     }
     .offer1_bolt, .offer2_bolt {
         font-weight: 600;
@@ -67,6 +69,8 @@ div {
     height: 5rem;
     font-family: 'Migrena Grotesque Light';
     font-size: 1.2rem;
+    background-color: #E8E8E8;
+    border-bottom: 1px solid #000000;
     .header-logo {
         margin-left: 3rem;
         font-family: 'Barriecito';
@@ -104,13 +108,36 @@ div {
     flex-grow: 1;
     display: flex;
     flex-flow: row nowrap;
-    
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
     .main-left {
         width: 50%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-around;
-        
+        align-items: center;
+        .left-item-text1 {
+            font-family: 'Barriecito';
+            font-size: 3rem;
+            text-align: center;
+        }
+        .left-item-text2 {
+            font-family: 'Migrena Grotesque Regular';
+            font-size: 1.5rem;
+            width: 90%;
+            text-align: center;
+        }
+        .main-left-btn {
+            width: 174px;
+            height: 50px;
+            background: #E8E8E8;
+            box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
     }
     .main-right {
         width: 50%;
@@ -128,4 +155,6 @@ div {
     flex-flow: row nowrap;
     justify-content: space-between;
     height: 4.6rem;
+    background-color: #E8E8E8;
+    border-top: 1px solid #000000;
 }
