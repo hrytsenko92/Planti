@@ -34,12 +34,17 @@ div {
   flex-flow: column nowrap;
   justify-content: space-between;
   height: 100vh; }
-  .flex-container .flex-item-offer1 {
-    text-align: center;
-    height: 2.4rem; }
-  .flex-container .flex-item-offer2 {
-    text-align: center;
-    height: 2.4rem; }
+  .flex-container .flex-item-offer1, .flex-container .flex-item-offer2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 2.4rem;
+    font-family: 'Migrena Grotesque Light';
+    font-size: 1rem;
+    font-weight: 300; }
+  .flex-container .offer1_bolt, .flex-container .offer2_bolt {
+    font-weight: 600; }
 
 .flex-item-header {
   display: flex;
