@@ -11,7 +11,8 @@
   src: url(/font/Migrena_Grotesque-Regular.woff) format("woff");
   font-weight: 'regular'; }
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: 'Migrena Grotesque Regular'; }
 
 body {
   margin: 0;
@@ -38,31 +39,35 @@ div {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
   height: 5rem;
   font-family: 'Migrena Grotesque Light'; }
   .flex-item-header .header-logo {
     margin-left: 3rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-content: center;
     font-family: 'Barriecito'; }
   .flex-item-header .header-menu-ul {
     flex-grow: 0.2;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center; }
+    justify-content: space-around; }
     .flex-item-header .header-menu-ul .ul-item {
       list-style-type: none; }
       .flex-item-header .header-menu-ul .ul-item a {
         text-decoration: none; }
   .flex-item-header .header-login {
-    margin-right: 3rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center; }
+    margin-right: 3rem; }
+    .flex-item-header .header-login .cart {
+      margin-left: 1rem; }
+    .flex-item-header .header-login .cart::after {
+      content: "";
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      background-image: url("../img/zero-ico.svg");
+      background-size: contain;
+      position: absolute;
+      margin-left: 2px;
+      margin-top: 3px; }
     .flex-item-header .header-login a {
       text-decoration: none; }
 
