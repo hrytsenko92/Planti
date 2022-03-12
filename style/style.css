@@ -115,7 +115,7 @@ body {
   .flex-item-main .main-right {
     width: 50%; }
     .flex-item-main .main-right .img-div {
-      background: url(/unsplash-2.jpg) center no-repeat;
+      background: url("../img/unsplash-resize.jpg") center no-repeat;
       background-size: cover;
       background-color: royalblue;
       min-height: 100%; }
