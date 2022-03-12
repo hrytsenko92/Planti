@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'Barriecito';
-  src: url(/font/Barriecito-Regular.woff) format("woff");
+  src: url(../font/Barriecito-Regular.woff) format("woff");
   font-weight: 'regular'; }
 @font-face {
   font-family: 'Migrena Grotesque Light';
-  src: url(/font/Migrena_Grotesque-Light.woff) format("woff");
+  src: url(../font/Migrena_Grotesque-Light.woff) format("woff");
   font-weight: 'light'; }
 @font-face {
   font-family: 'Migrena Grotesque Regular';
-  src: url(/font/Migrena_Grotesque-Regular.woff) format("woff");
+  src: url(../font/Migrena_Grotesque-Regular.woff) format("woff");
   font-weight: 'regular'; }
 html {
   font-size: 16px;
@@ -169,5 +169,56 @@ body {
       background-image: url("../img/Leaf.svg");
       background-size: contain;
       background-repeat: no-repeat; }
+
+@media screen and (max-width: 600px) {
+  .flex-item-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: auto; }
+    .flex-item-header .header-menu-ul {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center; }
+
+  .flex-item-main .main-left {
+    width: 100%; }
+    .flex-item-main .main-left .mobile_delete1 {
+      display: none; }
+  .flex-item-main .main-right {
+    display: none; }
+
+  .flex-item-footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    height: auto; }
+    .flex-item-footer .footer-social__ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      padding-inline-start: 0px; } }
+@media screen and (max-width: 430px) {
+  .flex-item-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto; }
+    .flex-item-header .header-menu-ul {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      padding-inline-start: 0px; }
+    .flex-item-header .header-login {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center; }
+      .flex-item-header .header-login .cart {
+        margin-left: -10px; } }
 
 /*# sourceMappingURL=style.css.map */
