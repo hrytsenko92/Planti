@@ -37,7 +37,7 @@ body {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    height: 2.4rem;
+    height: 2.2rem;
     font-family: 'Migrena Grotesque Light';
     font-size: 1rem;
     font-weight: 300;
@@ -50,7 +50,7 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
+  height: 4rem;
   font-family: 'Migrena Grotesque Light';
   font-size: 1.2rem;
   background-color: #E8E8E8;
@@ -124,8 +124,39 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  height: 4.6rem;
+  height: 4rem;
   background-color: #E8E8E8;
   border-top: 1px solid #000000; }
+  .flex-item-footer .footer-social__ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none; }
+    .flex-item-footer .footer-social__ul li {
+      margin-left: 1rem; }
+    .flex-item-footer .footer-social__ul a:hover {
+      border-bottom: none; }
+    .flex-item-footer .footer-social__ul .social_item_twitter {
+      display: inline-block;
+      width: 26px;
+      height: 23px;
+      background-image: url("../img/twitter.svg");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .flex-item-footer .footer-social__ul .social_item_instagram {
+      display: inline-block;
+      width: 26px;
+      height: 23px;
+      background-image: url("../img/insta.svg");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .flex-item-footer .footer-social__ul .social_item_linkedin {
+      display: inline-block;
+      width: 26px;
+      height: 23px;
+      background-image: url("../img/In.svg");
+      background-size: contain;
+      background-repeat: no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
