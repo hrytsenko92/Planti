@@ -153,19 +153,17 @@ body {
 .flex-item-footer {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content:space-between;
+    align-items: center;
     height: 4rem;
     background-color: #E8E8E8;
     border-top: 1px solid #000000;
     .footer-social__ul {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         list-style-type: none;
-        li {
-            margin-left: 1rem;
-        }
         a:hover {
             border-bottom: none;
         };
@@ -184,6 +182,7 @@ body {
             background-image: url('../img/insta.svg');
             background-size: contain;
             background-repeat: no-repeat;
+            margin-left: 1rem;
         }
         .social_item_linkedin {
             display: inline-block;
@@ -192,6 +191,22 @@ body {
             background-image: url('../img/In.svg');
             background-size: contain;
             background-repeat: no-repeat;
+            margin-left: 1rem;
         }
+    }
+    .footer-info {
+
+    }
+    .footer-icon {
+        .leaf   {
+        display: inline-block;
+        width: 26px;
+        height: 23px;
+        background-image: url('../img/Leaf.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        }
+        margin-right: 3rem;
+        margin-left: 3rem;
     }
 }
